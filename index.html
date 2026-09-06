@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+  <title>Anion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="launcher-box">
+    <div id="launcher-card">
+
+      <img id="logo" src="png-sources/a.png" alt="">
+      <div id="greeting">Good afternoon.</div>
+
+      <div id="feature-grid">
+        <div class="feature-card" data-url="https://calendar.google.com">
+          <div class="feature-icon">
+            <img src="png-sources/b.png" class="feature-icon-img" alt="">
+          </div>
+          <div class="feature-title">Stay on top</div>
+          <div class="feature-desc">Your smart summary of events and tasks</div>
+        </div>
+        <div class="feature-card" data-url="https://docs.google.com">
+          <div class="feature-icon">
+            <img src="png-sources/c.png" class="feature-icon-img" alt="">
+          </div>
+          <div class="feature-title">Create something new</div>
+          <div class="feature-desc">Design, write, or present with AI</div>
+        </div>
+        <div class="feature-card" data-url="https://news.google.com">
+          <div class="feature-icon">
+            <img src="png-sources/d.png" class="feature-icon-img" alt="">
+          </div>
+          <div class="feature-title">News of the day</div>
+          <div class="feature-desc">The top stories, picked for you</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span>QUICK ACCESS</span>
+      </div>
+      <div id="quick-access">
+        <div class="quick-item" data-url="https://drive.google.com"><div class="quick-icon">🗂️</div><span>Files</span></div>
+        <div class="quick-item" data-url="https://www.google.com"><div class="quick-icon">🌍</div><span>Web</span></div>
+        <div class="quick-item" data-url="https://photos.google.com"><div class="quick-icon">🖼️</div><span>Photos</span></div>
+        <div class="quick-item" data-url="https://github.com"><div class="quick-icon">🐙</div><span>GitHub</span></div>
+        <div class="quick-item" data-url="https://mail.google.com"><div class="quick-icon">✉️</div><span>Mail</span></div>
+        <div class="quick-item" data-url="https://calendar.google.com"><div class="quick-icon">📅</div><span>Calendar</span></div>
+      </div>
+
+      <div class="section-header">
+        <span> </span>
+      </div>
+      <div id="suggestions">
+        <div class="suggestion-chip" data-url="https://news.google.com"><span class="s-icon">📊</span> Read today's news</div>
+        <div class="suggestion-chip" data-url="https://mail.google.com"><span class="s-icon">✉️</span> Check your inbox</div>
+        <div class="suggestion-chip" data-url="https://drive.google.com"><span class="s-icon">🗃️</span> Organize this week's files</div>
+        <div class="suggestion-chip" data-url="https://images.google.com"><span class="s-icon">🖼️</span> Browse images</div>
+      </div>
+
+      <div id="input-bar">
+        <input id="launcher-input" type="text" placeholder="Search Google or type a URL..." autofocus />
+        <span class="icon-btn" id="send-btn">➤</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="workspace"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
+
+<div id="desktop">
+  <!-- Desktop icons / windows go here -->
+
+  <div id="taskbar">
+    <div id="taskbar-center">
+      <button id="start-button">
+        <img src="png-sources/images.jpeg" alt="">
+      </button>
+      <div id="taskbar-apps"></div>
+    </div>
+
+    <div id="system-tray">
+      <span id="clock"></span>
+    </div>
+  </div>
+</div>
